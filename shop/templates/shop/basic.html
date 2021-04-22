@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+        {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=' {% static "shop/index.css" %}' type="text/css" media="all">
+
+    <title>{% block title%} {% endblock %}</title>
+    <style>
+        {% block css %} {% endblock %}
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <ul>
+            <li><a href="{% url "shophome" %}">Home</a></li>
+            <li>India
+                <ul class="content">
+                    <li>MadhyaPradesh</li>
+                    <li>Utterpradesh</li>
+                    <li>HimachalPradesh</li>
+                    <li>Rajisthan</li>
+                    <li>Shimla</li>
+            <li>
+                <ul class="content">
+                    <li>America</li>
+                    <li>amlica</li>
+                </ul>
+            </li>
+            <li>New york</li>
+        </ul>
+    </div>
+    <h1 class="heading">Product</h1>
+{% block body %} {% endblock %}
+
+</body>
+</html>
